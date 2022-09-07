@@ -15,6 +15,8 @@ class CreateSoundsTable extends Migration
     {
         Schema::create('sounds', function (Blueprint $table) {
             $table->id();
+            $table->char('title',20);
+            $table->integer('size');
             $table->timestamps();
         });
     }
